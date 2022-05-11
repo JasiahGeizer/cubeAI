@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//if state = rotate, next state = move / idle
-
-
 public class cubeStateMachine : cubeState
 {
     [SerializeField] float jumpTimer = 0f;
