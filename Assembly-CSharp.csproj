@@ -53,9 +53,9 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CubeAI\cubeAiStateMachine.cs" />
-    <Compile Include="Assets\CubeAI\cubeState.cs" />
+    <Compile Include="Assets\CubeAI\cubeStateMachine.cs" />
     <Compile Include="Assets\cubeAIController.cs" />
+    <Compile Include="Assets\CubeAI\cubeState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
