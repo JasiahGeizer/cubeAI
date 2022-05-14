@@ -53,9 +53,13 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CubeAI\cubeStateMachine.cs" />
-    <Compile Include="Assets\cubeAIController.cs" />
-    <Compile Include="Assets\CubeAI\cubeState.cs" />
+    <Compile Include="Assets\CubeAI\IState.cs" />
+    <Compile Include="Assets\CubeAI\StateMachine.cs" />
+    <Compile Include="Assets\CubeAI\jumpState.cs" />
+    <Compile Include="Assets\CubeAI\moveForwardState.cs" />
+    <Compile Include="Assets\CubeAI\turnLeftState.cs" />
+    <Compile Include="Assets\CubeAI\turnRightState.cs" />
+    <Compile Include="Assets\CubeAI\idleState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
