@@ -7,10 +7,14 @@ public class moveForwardState : IState
     float speed = 50f;
     public void RunState(StateMachine stateMachine)
     {
-        stateMachine.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * speed);
+        AddForce(stateMachine.GetComponent<Rigidbody>(), speed);
     }
     public void CheckState(StateMachine stateMachine)
     {
         stateMachine.switchState(stateMachine.moveForwardState);
+    }
+    public void AddForce(Rigidbody rig, float speedToAdd)
+    {
+        rig.AddRelativeForce(Vector3.forward * speedToAdd);
     }
 }

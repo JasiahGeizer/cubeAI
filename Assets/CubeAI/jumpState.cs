@@ -14,7 +14,7 @@ public class jumpState : IState
     public void CheckState(StateMachine stateMachine)
     {
         jumpTimer += 1;
-        if (jumpTimer > 100)
+        if (checkTimerReached(jumpTimer,100))
         {
             stateMachine.switchState(stateMachine.jumpState);
             jumpTimer = setRandomWait(-500);
@@ -24,5 +24,13 @@ public class jumpState : IState
     public int setRandomWait(int min)
     {
         return Random.Range(min, 0);
+    }
+    public bool checkTimerReached(int currentTimer, int countToThis)
+    {
+        if (currentTimer >= countToThis)
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -10,7 +10,7 @@ public class idleState : IState
     public void RunState(StateMachine stateMachine)
     {
         stateMachine.GetComponent<Renderer>().material.color = Color.blue;
-        if (countIdle >= endIdle)
+        if (checkTimerReached(countIdle, endIdle))
         {
             countIdle = setRandomWait(-350);
             stateMachine.GetComponent<Renderer>().material.color = Color.red;
@@ -20,7 +20,7 @@ public class idleState : IState
     public void CheckState(StateMachine stateMachine)
     {
         countIdle += 1;
-        if (countIdle >= startIdle)
+        if (checkTimerReached(countIdle, startIdle))
         {
             stateMachine.switchState(stateMachine.idleState);
         }
@@ -29,5 +29,14 @@ public class idleState : IState
     public int setRandomWait(int min)
     {
         return Random.Range(min, 0);
+    }
+
+    public bool checkTimerReached(int currentTimer, int countToThis)
+    {
+        if (currentTimer >= countToThis)
+        {
+            return true;
+        }
+        return false;
     }
 }
