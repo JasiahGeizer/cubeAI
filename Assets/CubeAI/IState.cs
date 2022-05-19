@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IState
 {
-    void RunState(StateMachine stateMachine);
-    void CheckState(StateMachine stateMachine);
+    void RunState(cubeStateMachine stateMachine);
+    void CheckState(cubeStateMachine stateMachine);
 }

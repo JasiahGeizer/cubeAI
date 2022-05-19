@@ -11,7 +11,7 @@ public class CubeAITest
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        StateMachine stateMachine = cube.AddComponent<StateMachine>();
+        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
         moveForwardState moveForwardState = new moveForwardState();
 
         Assert.IsTrue(cube.GetComponent<Rigidbody>().velocity.magnitude <= 0);
@@ -31,7 +31,7 @@ public class CubeAITest
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        StateMachine stateMachine = cube.AddComponent<StateMachine>();
+        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
         turnRightState turnRightState = new turnRightState();
 
         cube.GetComponent<Rigidbody>().velocity = Vector3.forward;
@@ -51,7 +51,7 @@ public class CubeAITest
         //Create CubeAI
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        StateMachine stateMachine = cube.AddComponent<StateMachine>();
+        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
         turnRightState turnRightState = new turnRightState();
 
         //Create Wall
@@ -66,18 +66,18 @@ public class CubeAITest
 
         //Check if CubeAI can detect wall
         wall.layer = 7;
-        Assert.IsTrue(turnRightState.CheckForWalls(cube.GetComponent<StateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
+        Assert.IsTrue(turnRightState.CheckForWalls(cube.GetComponent<cubeStateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
 
         //Check if cubeAI isn't falsely detecting non-walls as walls
         wall.layer = 1;
-        Assert.IsFalse(turnRightState.CheckForWalls(cube.GetComponent<StateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
+        Assert.IsFalse(turnRightState.CheckForWalls(cube.GetComponent<cubeStateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
     }
     [UnityTest]
     public IEnumerator turnRightPlayModeTestAddRotation()
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        StateMachine stateMachine = cube.AddComponent<StateMachine>();
+        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
         turnRightState turnRightState = new turnRightState();
 
         cube.GetComponent<Rigidbody>().velocity = Vector3.forward;

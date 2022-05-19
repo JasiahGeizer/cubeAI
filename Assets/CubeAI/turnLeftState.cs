@@ -9,13 +9,13 @@ public class turnLeftState : IState
     [SerializeField] Vector3 leftSide = new Vector3(-0.5f, 0, 0);
     [SerializeField] Vector3 rightSide = new Vector3(0.5f, 0, 0);
     [SerializeField] float wallDistance = 5f;
-    public void RunState(StateMachine stateMachine)
+    public void RunState(cubeStateMachine stateMachine)
     {
         reduceVelocity(stateMachine.GetComponent<Rigidbody>(), reduceBy);
         AddRotation(stateMachine.GetComponent<Rigidbody>(), speed);
     }
     
-    public void CheckState(StateMachine stateMachine)
+    public void CheckState(cubeStateMachine stateMachine)
     {
         if (CheckForWalls(stateMachine, leftSide, wallDistance) || CheckForWalls(stateMachine, rightSide, wallDistance))
         {
@@ -32,7 +32,7 @@ public class turnLeftState : IState
         rig.AddTorque(Vector3.down * rotateSpeed);
     }
 
-    public bool CheckForWalls(StateMachine stateMachine, Vector3 side, float distToCheck)
+    public bool CheckForWalls(cubeStateMachine stateMachine, Vector3 side, float distToCheck)
     {
         int layerMask = 1 << 6;
         RaycastHit hit;

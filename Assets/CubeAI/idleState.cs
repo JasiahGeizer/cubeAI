@@ -7,7 +7,7 @@ public class idleState : IState
     int countIdle = 0;
     int startIdle = 500;
     int endIdle = 700;
-    public void RunState(StateMachine stateMachine)
+    public void RunState(cubeStateMachine stateMachine)
     {
         stateMachine.GetComponent<Renderer>().material.color = Color.blue;
         if (checkTimerReached(countIdle, endIdle))
@@ -17,7 +17,7 @@ public class idleState : IState
         }
     }
 
-    public void CheckState(StateMachine stateMachine)
+    public void CheckState(cubeStateMachine stateMachine)
     {
         countIdle += 1;
         if (checkTimerReached(countIdle, startIdle))

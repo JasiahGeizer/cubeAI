@@ -10,7 +10,7 @@ public class StateMachineTest
     private GameObject gameobj;
     public moveForwardState moveForwardState = new moveForwardState();
     public jumpState jumpState = new jumpState();
-    public StateMachine stateMachine = new StateMachine();
+    public cubeStateMachine stateMachine = new cubeStateMachine();
 
     [Test]
     public void idleStateTest()

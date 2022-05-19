@@ -6,12 +6,12 @@ public class jumpState : IState
 {
     int jumpTimer = 0;
     float jumpForce = 400f;
-    public void RunState(StateMachine stateMachine)
+    public void RunState(cubeStateMachine stateMachine)
     {
         stateMachine.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce);
     }
 
-    public void CheckState(StateMachine stateMachine)
+    public void CheckState(cubeStateMachine stateMachine)
     {
         jumpTimer += 1;
         if (checkTimerReached(jumpTimer,100))

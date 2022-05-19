@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1278
     height: 981
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -69,7 +69,7 @@ MonoBehaviour:
     y: 0
     width: 1278
     height: 981
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -143,10 +143,10 @@ MonoBehaviour:
     y: 30
     width: 1278
     height: 931
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 706, y: 471}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 79
+  controlID: 117
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,10 +168,10 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 931
-  m_MinSize: {x: 231, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 231, y: 471}
+  m_MaxSize: {x: 10001, y: 14021}
   vertical: 1
-  controlID: 80
+  controlID: 118
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +191,8 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 636
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -248,10 +248,10 @@ MonoBehaviour:
     y: 0
     width: 396
     height: 931
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 200, y: 321}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 59
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 396
     height: 261
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 261
     width: 396
     height: 670
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 21}
@@ -324,8 +324,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 931
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -383,7 +383,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 14}
     m_NewResultList:
@@ -392,7 +392,7 @@ MonoBehaviour:
       name: cubeAI
       fullName: cubeAI
       resultStatus: 1
-      duration: 0.1987189
+      duration: 0.1091392
       messages: 
       output: 
       stacktrace: 
@@ -408,7 +408,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/PlayModeTests.dll
       resultStatus: 1
-      duration: 0.1451427
+      duration: 0.0562659
       messages: 
       output: 
       stacktrace: 
@@ -424,7 +424,7 @@ MonoBehaviour:
       name: CubeAITest
       fullName: CubeAITest
       resultStatus: 1
-      duration: 0.1403536
+      duration: 0.0498305
       messages: 
       output: 
       stacktrace: 
@@ -440,7 +440,7 @@ MonoBehaviour:
       name: moveForwardPlayModeTest
       fullName: CubeAITest.moveForwardPlayModeTest
       resultStatus: 1
-      duration: 0.0453179
+      duration: 0.0568907
       messages: 
       output: '2.009601
 
@@ -459,7 +459,7 @@ MonoBehaviour:
       name: turnRightPlayModeTestAddRotation
       fullName: CubeAITest.turnRightPlayModeTestAddRotation
       resultStatus: 1
-      duration: 0.0282112
+      duration: 0.0378749
       messages: 
       output: '0.7991999
 
@@ -478,7 +478,7 @@ MonoBehaviour:
       name: turnRightPlayModeTestRaycast
       fullName: CubeAITest.turnRightPlayModeTestRaycast
       resultStatus: 1
-      duration: 0.0132328
+      duration: 0.0128558
       messages: 
       output: 
       stacktrace: 
@@ -495,7 +495,7 @@ MonoBehaviour:
       name: turnRightPlayModeTestReduceVelocity
       fullName: CubeAITest.turnRightPlayModeTestReduceVelocity
       resultStatus: 1
-      duration: 0.0112912
+      duration: 0.0128986
       messages: 
       output: 
       stacktrace: 
@@ -507,7 +507,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTests.dll/[PlayModeTests][CubeAITest][suite]
-    m_ResultText: 'turnRightPlayModeTestAddRotation (0.028s)
+    m_ResultText: 'turnRightPlayModeTestAddRotation (0.038s)
 
       ---
 
@@ -552,7 +552,7 @@ MonoBehaviour:
       name: cubeAI
       fullName: cubeAI
       resultStatus: 1
-      duration: 0.0219333
+      duration: 0.0238342
       messages: 
       output: 
       stacktrace: 
@@ -568,7 +568,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0086473
+      duration: 0.0112671
       messages: 
       output: 
       stacktrace: 
@@ -584,7 +584,7 @@ MonoBehaviour:
       name: StateMachineTest
       fullName: StateMachineTest
       resultStatus: 1
-      duration: 0.0084151
+      duration: 0.0085533
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -605,7 +605,7 @@ MonoBehaviour:
       name: idleStateTest
       fullName: StateMachineTest.idleStateTest
       resultStatus: 1
-      duration: 0.0020694
+      duration: 0.0024375
       messages: 
       output: 
       stacktrace: 
@@ -622,7 +622,7 @@ MonoBehaviour:
       name: JumpStateTest
       fullName: StateMachineTest.JumpStateTest
       resultStatus: 1
-      duration: 0.0002512
+      duration: 0.0002603
       messages: 
       output: 
       stacktrace: 
@@ -686,10 +686,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1281
-    y: 722
+    x: 1274
+    y: 717
     width: 604
-    height: 276
+    height: 274
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 604, y: 255}
+  m_TargetSize: {x: 604, y: 253}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -714,8 +714,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -302
     m_HBaseRangeMax: 302
-    m_VBaseRangeMin: -138
-    m_VBaseRangeMax: 138
+    m_VBaseRangeMin: -126.5
+    m_VBaseRangeMax: 126.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -732,11 +732,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 604
-      height: 276
+      height: 253
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 302, y: 138}
+    m_Translation: {x: 302, y: 126.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -744,12 +744,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -302
-      y: -138
+      y: -126.5
       width: 604
-      height: 276
+      height: 253
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 604, y: 276}
+  m_LastWindowPixelSize: {x: 604, y: 274}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.0077922256, y: -0.8901715, z: 0.45532826, w: 0.015227981}
     speed: 2
-    m_Value: {x: -0.007792226, y: 0.8901716, z: -0.4553283, w: -0.015227981}
+    m_Value: {x: 0.007792141, y: -0.8901619, z: 0.4553233, w: 0.015227816}
   m_Size:
     m_Target: 24.298819
     speed: 2
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 90540
+  m_LastSelectedObjectID: 16054
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -990,7 +990,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 50fbffff
+      m_ExpandedIDs: 5ef0ffff84f0ffffaaf0ffff58f1ffff8cf1ffffb2f1ffff9ef2ffff50fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1065,9 +1065,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a03f0000
-    m_LastClickedID: 16288
-    m_ExpandedIDs: 000000009e3f000000ca9a3b
+    m_SelectedIDs: a23f0000
+    m_LastClickedID: 16290
+    m_ExpandedIDs: 00000000a03f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1139,7 +1139,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1171,10 +1171,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1886
-    y: 345
+    x: 1879
+    y: 342
     width: 394
-    height: 653
+    height: 649
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &22
 MonoBehaviour:

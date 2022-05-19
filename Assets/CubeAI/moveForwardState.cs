@@ -5,11 +5,11 @@ using UnityEngine;
 public class moveForwardState : IState
 {
     float speed = 50f;
-    public void RunState(StateMachine stateMachine)
+    public void RunState(cubeStateMachine stateMachine)
     {
         AddForce(stateMachine.GetComponent<Rigidbody>(), speed);
     }
-    public void CheckState(StateMachine stateMachine)
+    public void CheckState(cubeStateMachine stateMachine)
     {
         stateMachine.switchState(stateMachine.moveForwardState);
     }
