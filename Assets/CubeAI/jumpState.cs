@@ -2,28 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jumpState : IState
+public class JumpState : IState
 {
     int jumpTimer = 0;
     float jumpForce = 400f;
-    public void RunState(cubeStateMachine stateMachine)
+    const int maxWait = 0;
+    int jumpMin = -500;
+    int countTo = 100;
+
+    public void RunState(CubeMovement stateMachine)
     {
-        stateMachine.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce);
+        stateMachine.Move(Vector3.up, jumpForce);
     }
 
-    public void CheckState(cubeStateMachine stateMachine)
+    public IState CheckState(Vector3 cubePosition, Vector3 forwardDirection)
     {
         jumpTimer += 1;
-        if (checkTimerReached(jumpTimer,100))
+        if (checkTimerReached(jumpTimer, countTo))
         {
-            stateMachine.switchState(stateMachine.jumpState);
-            jumpTimer = setRandomWait(-500);
+            jumpTimer = setRandomWait(jumpMin);
+            return this;
         }
+        return null;
     }
 
     public int setRandomWait(int min)
     {
-        return Random.Range(min, 0);
+        return Random.Range(min, maxWait);
     }
     public bool checkTimerReached(int currentTimer, int countToThis)
     {

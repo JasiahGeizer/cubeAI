@@ -11,8 +11,9 @@ public class CubeAITest
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
-        moveForwardState moveForwardState = new moveForwardState();
+        //CubeStateMachine stateMachine = cube.AddComponent<CubeStateMachine>();
+        CubeMovement stateMachine = new CubeMovement();
+        MoveForwardState moveForwardState = new MoveForwardState();
 
         Assert.IsTrue(cube.GetComponent<Rigidbody>().velocity.magnitude <= 0);
 
@@ -31,8 +32,8 @@ public class CubeAITest
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
-        turnRightState turnRightState = new turnRightState();
+        //CubeStateMachine stateMachine = cube.AddComponent<CubeStateMachine>();
+        TurnRightState turnRightState = new TurnRightState();
 
         cube.GetComponent<Rigidbody>().velocity = Vector3.forward;
 
@@ -40,7 +41,7 @@ public class CubeAITest
         yield return new WaitForEndOfFrame(); //start
         yield return new WaitForEndOfFrame(); 
 
-        turnRightState.reduceVelocity(cube.GetComponent<Rigidbody>(), 1.1f);
+        turnRightState.reduceVelocity(cube.GetComponent<CubeMovement>(), 100f);
 
         Assert.LessOrEqual(cube.GetComponent<Rigidbody>().velocity.magnitude, 1);
     }
@@ -51,8 +52,8 @@ public class CubeAITest
         //Create CubeAI
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
-        turnRightState turnRightState = new turnRightState();
+        //CubeStateMachine stateMachine = cube.AddComponent<CubeStateMachine>();
+        TurnRightState turnRightState = new TurnRightState();
 
         //Create Wall
         GameObject wall = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -66,29 +67,30 @@ public class CubeAITest
 
         //Check if CubeAI can detect wall
         wall.layer = 7;
-        Assert.IsTrue(turnRightState.CheckForWalls(cube.GetComponent<cubeStateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
+        int layerMask = 1 << 7;
+        Assert.IsTrue(turnRightState.CheckForWalls(cube.transform.position, cube.transform.TransformDirection(Vector3.forward), new Vector3(-0.5f, 0, 0), 5f, layerMask));
 
         //Check if cubeAI isn't falsely detecting non-walls as walls
         wall.layer = 1;
-        Assert.IsFalse(turnRightState.CheckForWalls(cube.GetComponent<cubeStateMachine>(), new Vector3(-0.5f, 0, 0), 5f));
+        Assert.IsFalse(turnRightState.CheckForWalls(cube.transform.position, cube.transform.TransformDirection(Vector3.forward), new Vector3(-0.5f, 0, 0), 5f, layerMask));
     }
     [UnityTest]
     public IEnumerator turnRightPlayModeTestAddRotation()
     {
         GameObject cube = new GameObject();
         Rigidbody rig = cube.AddComponent<Rigidbody>();
-        cubeStateMachine stateMachine = cube.AddComponent<cubeStateMachine>();
-        turnRightState turnRightState = new turnRightState();
+        TurnRightState turnRightState = new TurnRightState();
 
         cube.GetComponent<Rigidbody>().velocity = Vector3.forward;
 
         yield return new WaitForEndOfFrame();//awake
         yield return new WaitForEndOfFrame(); //start
 
-        turnRightState.AddRotation(cube.GetComponent<Rigidbody>(), 40f);
+        turnRightState.AddRotation(cube.GetComponent<CubeMovement>(), 40f);
 
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame(); 
+        yield return new WaitForEndOfFrame();
 
         Assert.Greater(cube.GetComponent<Rigidbody>().angularVelocity.magnitude, 0);
         Debug.Log(cube.GetComponent<Rigidbody>().angularVelocity.magnitude);

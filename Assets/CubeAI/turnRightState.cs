@@ -2,45 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class turnRightState : IState
+public class TurnRightState : turnAbstractState
 {
     [SerializeField] float speed = 40f;
-    [SerializeField] float reduceBy = 1.1f;
+    [SerializeField] float reduceBy = 100f;
     [SerializeField] Vector3 leftSide = new Vector3(-0.5f, 0, 0);
     [SerializeField] Vector3 rightSide = new Vector3(0.5f, 0, 0);
     [SerializeField] float wallDistance = 5f;
-    public void RunState(cubeStateMachine stateMachine)
+
+    public override void RunState(CubeMovement stateMachine)
     {
-        reduceVelocity(stateMachine.GetComponent<Rigidbody>(), reduceBy);
-        AddRotation(stateMachine.GetComponent<Rigidbody>(), speed);
+        base.RunState(stateMachine);
+        reduceVelocity(stateMachine, reduceBy);
+        AddRotation(stateMachine, speed);
     }
 
-    public void CheckState(cubeStateMachine stateMachine)
+    public override IState CheckState(Vector3 cubePosition, Vector3 forwardDirection)
     {
-        if (CheckForWalls(stateMachine, leftSide, wallDistance) || CheckForWalls(stateMachine, rightSide, wallDistance))
+        int layerMask = 1 << LayerMask.NameToLayer("Wall");
+        if (CheckForWalls(cubePosition, forwardDirection, leftSide, wallDistance, layerMask) || CheckForWalls(cubePosition, forwardDirection, rightSide, wallDistance, layerMask))
         {
-            stateMachine.switchState(stateMachine.turnRightState);
+            return this;
         }
+        return null;
     }
-
-    public void reduceVelocity(Rigidbody cubeRigidbody, float reduceVelocityBy)
-    {
-        cubeRigidbody.velocity /= reduceVelocityBy;
-    }
-    public void AddRotation(Rigidbody rig, float rotateSpeed)
-    {
-        rig.AddTorque(Vector3.up * rotateSpeed);
-    }
-
-    public bool CheckForWalls(cubeStateMachine stateMachine, Vector3 side, float distToCheck)
-    {
-        int layerMask = 1 << 7;
-        RaycastHit hit;
-        if (Physics.Raycast(stateMachine.transform.position + side, stateMachine.transform.TransformDirection(Vector3.forward), out hit, distToCheck, layerMask))
-        {
-            return true;
-        }
-        return false;
-    }
-    
 }

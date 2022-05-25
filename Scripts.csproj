@@ -56,13 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CubeAI\cubeStateMachine.cs" />
-    <Compile Include="Assets\CubeAI\jumpState.cs" />
-    <Compile Include="Assets\CubeAI\turnLeftState.cs" />
-    <Compile Include="Assets\CubeAI\moveForwardState.cs" />
+    <Compile Include="Assets\CubeAI\CubeStateMachine.cs" />
+    <Compile Include="Assets\CubeAI\JumpState.cs" />
+    <Compile Include="Assets\CubeAI\TurnLeftState.cs" />
+    <Compile Include="Assets\CubeAI\TurnAbstractState.cs" />
+    <Compile Include="Assets\CubeAI\MoveForwardState.cs" />
     <Compile Include="Assets\CubeAI\IState.cs" />
-    <Compile Include="Assets\CubeAI\turnRightState.cs" />
-    <Compile Include="Assets\CubeAI\idleState.cs" />
+    <Compile Include="Assets\CubeAI\TurnRightState.cs" />
+    <Compile Include="Assets\CubeAI\IdleState.cs" />
+    <Compile Include="Assets\CubeAI\CubeMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CubeAI\Scripts.asmdef" />

@@ -2,32 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cubeStateMachine : MonoBehaviour
+public class CubeStateMachine : MonoBehaviour
 {
     IState currentState;
-    public jumpState jumpState = new jumpState();
-    public moveForwardState moveForwardState = new moveForwardState();
-    public turnLeftState turnLeftState = new turnLeftState();
-    public turnRightState turnRightState = new turnRightState();
-    public idleState idleState = new idleState();
+    public IState[] stat = new IState[] { new MoveForwardState(), new TurnRightState(), new TurnLeftState(), new JumpState(), new IdleState()};
 
     void Start()
     {
-        currentState = idleState;
+
     }
 
     void FixedUpdate()
     {
-        moveForwardState.CheckState(this);
-        turnRightState.CheckState(this);
-        turnLeftState.CheckState(this);
-        jumpState.CheckState(this);
-        idleState.CheckState(this);
-        currentState.RunState(this);
+        checkAllState();
     }
 
     public void switchState(IState state)
     {
         currentState = state;
+    }
+    public void checkAllState()
+    {
+        foreach (IState state in stat)
+        {
+            var newState = state.CheckState(this.gameObject.transform.position, this.gameObject.transform.TransformDirection(Vector3.forward));
+            if (newState != null)
+            {
+                switchState(newState);
+            }
+        }
+        currentState.RunState(this.GetComponent<CubeMovement>());
     }
 }

@@ -8,14 +8,14 @@ using UnityEngine.TestTools;
 public class StateMachineTest 
 {
     private GameObject gameobj;
-    public moveForwardState moveForwardState = new moveForwardState();
-    public jumpState jumpState = new jumpState();
-    public cubeStateMachine stateMachine = new cubeStateMachine();
+    public MoveForwardState moveForwardState = new MoveForwardState();
+    public JumpState jumpState = new JumpState();
+    public CubeMovement stateMachine = new CubeMovement();
 
     [Test]
     public void idleStateTest()
     {
-        idleState state = new idleState();
+        IdleState state = new IdleState();
 
         Assert.IsTrue(state.setRandomWait(0) == 0);
         var wait = state.setRandomWait(-350);
@@ -27,7 +27,7 @@ public class StateMachineTest
     [Test]
     public void JumpStateTest()
     {
-        jumpState state = new jumpState();
+        JumpState state = new JumpState();
 
         Assert.IsTrue(state.setRandomWait(0) == 0);
         var wait = state.setRandomWait(-350);

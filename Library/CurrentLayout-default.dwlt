@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1274
+    x: 1281
     y: 51
     width: 1278
-    height: 981
+    height: 988
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Hierarchy
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
@@ -68,7 +68,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1278
-    height: 981
+    height: 988
   m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
+    y: 968
     width: 1278
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -142,11 +142,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1278
-    height: 931
+    height: 938
   m_MinSize: {x: 706, y: 471}
   m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 117
+  controlID: 141
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,12 +166,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 605
-    height: 931
+    width: 487
+    height: 938
   m_MinSize: {x: 231, y: 471}
   m_MaxSize: {x: 10001, y: 14021}
   vertical: 1
-  controlID: 118
+  controlID: 142
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 605
-    height: 636
+    width: 487
+    height: 641
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
@@ -214,9 +214,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 636
-    width: 605
-    height: 295
+    y: 641
+    width: 487
+    height: 297
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 20}
@@ -244,14 +244,14 @@ MonoBehaviour:
   - {fileID: 12}
   m_Position:
     serializedVersion: 2
-    x: 605
+    x: 487
     y: 0
-    width: 396
-    height: 931
+    width: 516
+    height: 938
   m_MinSize: {x: 200, y: 321}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 17
+  controlID: 59
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 396
-    height: 261
+    width: 516
+    height: 438
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 261
-    width: 396
-    height: 670
+    y: 438
+    width: 516
+    height: 500
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -320,10 +320,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1001
+    x: 1003
     y: 0
-    width: 277
-    height: 931
+    width: 275
+    height: 938
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
@@ -354,28 +354,28 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1879
-    y: 342
-    width: 394
-    height: 649
+    x: 1768
+    y: 519
+    width: 514
+    height: 479
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 167
-    splitterInitialOffset: 0
+    ID: 197
+    splitterInitialOffset: 297
     currentActiveSplitter: -1
     realSizes:
-    - 434
-    - 145
+    - 230
+    - 179
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.56296295
+    - 0.43703705
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 579
+    lastTotalSize: 409
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -383,7 +383,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 14}
     m_NewResultList:
@@ -391,9 +391,9 @@ MonoBehaviour:
       uniqueId: '[cubeAI][suite]'
       name: cubeAI
       fullName: cubeAI
-      resultStatus: 1
-      duration: 0.1091392
-      messages: 
+      resultStatus: 2
+      duration: 0.0943771
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -407,9 +407,9 @@ MonoBehaviour:
       uniqueId: '[PlayModeTests][D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
       name: PlayModeTests.dll
       fullName: D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 1
-      duration: 0.0562659
-      messages: 
+      resultStatus: 2
+      duration: 0.0422811
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -423,9 +423,9 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/[PlayModeTests][CubeAITest][suite]
       name: CubeAITest
       fullName: CubeAITest
-      resultStatus: 1
-      duration: 0.0498305
-      messages: 
+      resultStatus: 2
+      duration: 0.0363226
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -440,9 +440,14 @@ MonoBehaviour:
       name: moveForwardPlayModeTest
       fullName: CubeAITest.moveForwardPlayModeTest
       resultStatus: 1
-      duration: 0.0568907
+      duration: 0.0261042
       messages: 
-      output: '2.009601
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+        1.019065
 
 '
       stacktrace: 
@@ -458,13 +463,17 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/CubeAITest/[PlayModeTests][CubeAITest.turnRightPlayModeTestAddRotation]
       name: turnRightPlayModeTestAddRotation
       fullName: CubeAITest.turnRightPlayModeTestAddRotation
-      resultStatus: 1
-      duration: 0.0378749
-      messages: 
-      output: '0.7991999
-
-'
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0222377
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at turnAbstractState.AddRotation (CubeMovement stateMachine,
+        System.Single rotateSpeed) [0x00000] in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\CubeAI\\TurnAbstractState.cs:22
+        \r\n  at CubeAITest+<turnRightPlayModeTestAddRotation>d__3.MoveNext () [0x0009b]
+        in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\PlayModeTests\\CubeAITest.cs:89
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in D:\\Unity\\Projects\\2020\\cubeAI\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -478,7 +487,7 @@ MonoBehaviour:
       name: turnRightPlayModeTestRaycast
       fullName: CubeAITest.turnRightPlayModeTestRaycast
       resultStatus: 1
-      duration: 0.0128558
+      duration: 0.0167542
       messages: 
       output: 
       stacktrace: 
@@ -494,11 +503,17 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/CubeAITest/[PlayModeTests][CubeAITest.turnRightPlayModeTestReduceVelocity]
       name: turnRightPlayModeTestReduceVelocity
       fullName: CubeAITest.turnRightPlayModeTestReduceVelocity
-      resultStatus: 1
-      duration: 0.0128986
-      messages: 
+      resultStatus: 2
+      duration: 0.0104816
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at turnAbstractState.reduceVelocity (CubeMovement stateMachine,
+        System.Single reduceVelocityBy) [0x00000] in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\CubeAI\\TurnAbstractState.cs:18
+        \r\n  at CubeAITest+<turnRightPlayModeTestReduceVelocity>d__1.MoveNext ()
+        [0x000ae] in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\PlayModeTests\\CubeAITest.cs:44
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in D:\\Unity\\Projects\\2020\\cubeAI\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -507,16 +522,23 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTests.dll/[PlayModeTests][CubeAITest][suite]
-    m_ResultText: 'turnRightPlayModeTestAddRotation (0.038s)
-
-      ---
-
-      0.7991999'
-    m_ResultStacktrace: 
+    m_ResultText: "turnRightPlayModeTestReduceVelocity (0.010s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat turnAbstractState.reduceVelocity
+      (CubeMovement stateMachine, System.Single reduceVelocityBy) [0x00000] in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\CubeAI\\TurnAbstractState.cs:18
+      \r\n  at CubeAITest+<turnRightPlayModeTestReduceVelocity>d__1.MoveNext () [0x000ae]
+      in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\PlayModeTests\\CubeAITest.cs:44
+      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+      in D:\\Unity\\Projects\\2020\\cubeAI\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46"
+    m_ResultStacktrace: "  at turnAbstractState.reduceVelocity (CubeMovement stateMachine,
+      System.Single reduceVelocityBy) [0x00000] in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\CubeAI\\TurnAbstractState.cs:18
+      \r\n  at CubeAITest+<turnRightPlayModeTestReduceVelocity>d__1.MoveNext () [0x000ae]
+      in D:\\Unity\\Projects\\2020\\cubeAI\\Assets\\PlayModeTests\\CubeAITest.cs:44
+      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+      in D:\\Unity\\Projects\\2020\\cubeAI\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 390a7a0b
-      m_LastClickedID: 192547385
+      m_SelectedIDs: bbc173bf
+      m_LastClickedID: -1082932805
       m_ExpandedIDs: e38184bd220afd07cb985744ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -552,7 +574,7 @@ MonoBehaviour:
       name: cubeAI
       fullName: cubeAI
       resultStatus: 1
-      duration: 0.0238342
+      duration: 0.0246776
       messages: 
       output: 
       stacktrace: 
@@ -568,7 +590,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0112671
+      duration: 0.0122813
       messages: 
       output: 
       stacktrace: 
@@ -584,7 +606,7 @@ MonoBehaviour:
       name: StateMachineTest
       fullName: StateMachineTest
       resultStatus: 1
-      duration: 0.0085533
+      duration: 0.0090035
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -605,7 +627,7 @@ MonoBehaviour:
       name: idleStateTest
       fullName: StateMachineTest.idleStateTest
       resultStatus: 1
-      duration: 0.0024375
+      duration: 0.002076
       messages: 
       output: 
       stacktrace: 
@@ -622,7 +644,7 @@ MonoBehaviour:
       name: JumpStateTest
       fullName: StateMachineTest.JumpStateTest
       resultStatus: 1
-      duration: 0.0002603
+      duration: 0.0002413
       messages: 
       output: 
       stacktrace: 
@@ -686,10 +708,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1274
-    y: 717
-    width: 604
-    height: 274
+    x: 1281
+    y: 722
+    width: 486
+    height: 276
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -697,7 +719,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 604, y: 253}
+  m_TargetSize: {x: 486, y: 255}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -712,10 +734,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -302
-    m_HBaseRangeMax: 302
-    m_VBaseRangeMin: -126.5
-    m_VBaseRangeMax: 126.5
+    m_HBaseRangeMin: -243
+    m_HBaseRangeMax: 243
+    m_VBaseRangeMin: -127.5
+    m_VBaseRangeMax: 127.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -733,23 +755,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 604
-      height: 253
+      width: 486
+      height: 255
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 302, y: 126.5}
+    m_Translation: {x: 243, y: 127.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -302
-      y: -126.5
-      width: 604
-      height: 253
+      x: -243
+      y: -127.5
+      width: 486
+      height: 255
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 604, y: 274}
+  m_LastWindowPixelSize: {x: 486, y: 276}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -775,10 +797,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1274
+    x: 1281
     y: 81
-    width: 604
-    height: 615
+    width: 486
+    height: 620
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: fbdf9b50d64d89741b30419aec581ae8
@@ -791,9 +813,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.545553, y: -13.48564, z: -2.9727306}
+    m_Target: {x: 0, y: 3, z: 0}
     speed: 2
-    m_Value: {x: 0.545553, y: -13.48564, z: -2.9727306}
+    m_Value: {x: 0, y: 3, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -840,13 +862,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 1
   m_Rotation:
-    m_Target: {x: 0.0077922256, y: -0.8901715, z: 0.45532826, w: 0.015227981}
+    m_Target: {x: 0.02560287, y: -0.92103344, z: 0.383784, w: 0.06143666}
     speed: 2
-    m_Value: {x: 0.007792141, y: -0.8901619, z: 0.4553233, w: 0.015227816}
+    m_Value: {x: 0.02560258, y: -0.921023, z: 0.38377964, w: 0.061435964}
   m_Size:
-    m_Target: 24.298819
+    m_Target: 16.228529
     speed: 2
-    m_Value: 24.298819
+    m_Value: 16.228529
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -891,14 +913,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1274
-    y: 698
-    width: 781
-    height: 293
+    x: 1281
+    y: 722
+    width: 486
+    height: 276
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16054
+  m_LastSelectedObjectID: 20144
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -980,17 +1002,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1879
+    x: 1768
     y: 81
-    width: 394
-    height: 240
+    width: 514
+    height: 417
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5ef0ffff84f0ffffaaf0ffff58f1ffff8cf1ffffb2f1ffff9ef2ffff50fbffff
+      m_ExpandedIDs: 1e93ffff4493fffff093ffff2294ffff4894fffff494ffff1895ffff3e95ffff2096ffff8c9cffffb29cffff5e9dffff9a9dffffc09dffff6c9effff789fffff9e9fffff54a0ffff3ca1ffff62a1ffff10a2ffff68a3ffff8ea3ffff42a4ffff6ea4ffff94a4ffff40a5ffff74a5ffff9aa5ffff46a6ffff8ca6ffffbaa6ffffe0a6ffff8ca7ffffbea7ffffe4a7ffffc6a8fffff8a8ffff1ea9ffffcaa9ffff80d2ffffa6d2ffff5ad3ffffded3ffff04d4ffffb0d4ffff24d6ffff4ed6ffff02d7ffffbad7ffffe4d7ffff90d8ffffe4d8ffff0ed9fffff0d9ffffb0dbffffdadbffff86dcffffd2dcfffffcdcffffb0ddffff40dfffff6adfffff18e0ffff2ce1ffff56e1ffff10e2ffff32e3ffff5ce3ffff14e4fffffee4ffff20e5ffff52e5ffff2ee6ffff72e7ffff9ce7ffff4ae8ffff10eaffff36eaffffe4eaffff18ecffff3eecffffececffff48edffff6eedffff56eeffff8eefffffb4efffff60f0ffff94f0ffffbaf0ffff68f1ffff90f2ffffb6f2ffff64f3ffff82f4ffffa8f4ffff56f5ffff5cf7ffff82f7ffff30f8ffff64f8ffff8af8ffff78f9ffffb8f9ffff50fbffffb04e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1034,10 +1056,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1274
-    y: 717
-    width: 604
-    height: 274
+    x: 1281
+    y: 722
+    width: 486
+    height: 276
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1065,9 +1087,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a23f0000
-    m_LastClickedID: 16290
-    m_ExpandedIDs: 00000000a03f000000ca9a3b
+    m_SelectedIDs: 683d0000
+    m_LastClickedID: 15720
+    m_ExpandedIDs: 00000000663d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1126,20 +1148,20 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000f4780300846c00009e400000564200000c540000244b00008830040000000000328d0000b29c0000026d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Environment
+      m_OriginalName: Environment
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 15722
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1171,10 +1193,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1879
-    y: 342
-    width: 394
-    height: 649
+    x: 1768
+    y: 519
+    width: 514
+    height: 479
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &22
 MonoBehaviour:
@@ -1196,10 +1218,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2275
+    x: 2284
     y: 81
-    width: 276
-    height: 910
+    width: 274
+    height: 917
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

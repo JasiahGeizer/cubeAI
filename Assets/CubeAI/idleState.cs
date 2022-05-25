@@ -2,33 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class idleState : IState
+public class IdleState : IState
 {
-    int countIdle = 0;
-    int startIdle = 500;
-    int endIdle = 700;
-    public void RunState(cubeStateMachine stateMachine)
+    public int countIdle = 0;
+    public int startIdle = 500;
+    const int endIdle = 700;
+    const int maxRange = 0;
+
+    public void RunState(CubeMovement stateMachine)
     {
-        stateMachine.GetComponent<Renderer>().material.color = Color.blue;
+        /*stateMachine.GetComponent<Renderer>().material.color = Color.blue;
         if (checkTimerReached(countIdle, endIdle))
         {
             countIdle = setRandomWait(-350);
             stateMachine.GetComponent<Renderer>().material.color = Color.red;
-        }
+        }*/
     }
 
-    public void CheckState(cubeStateMachine stateMachine)
+    public IState CheckState(Vector3 cubePosition, Vector3 forwardDirection)
     {
         countIdle += 1;
         if (checkTimerReached(countIdle, startIdle))
         {
-            stateMachine.switchState(stateMachine.idleState);
+            if (countIdle > endIdle) { countIdle = 0; }
+            //stateMachine.switchState(this);
+            return this;
         }
+        return null;
     }
 
     public int setRandomWait(int min)
     {
-        return Random.Range(min, 0);
+        return Random.Range(min, maxRange);
     }
 
     public bool checkTimerReached(int currentTimer, int countToThis)

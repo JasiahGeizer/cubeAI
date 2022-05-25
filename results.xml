@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.0326434">
+  <test-suite type="TestSuite" id="1008" name="cubeAI" fullname="cubeAI" runstate="Runnable" testcasecount="2" result="Passed" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.032643" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1012" name="Tests.dll" fullname="D:/Unity/Projects/2020/cubeAI/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.023334" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="11624" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1009" name="StateMachineTest" fullname="StateMachineTest" classname="StateMachineTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.022255" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+        <test-case id="1010" name="idleStateTest" fullname="StateMachineTest.idleStateTest" methodname="idleStateTest" classname="StateMachineTest" runstate="Runnable" seed="1033157611" result="Passed" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.008649" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1011" name="JumpStateTest" fullname="StateMachineTest.JumpStateTest" methodname="JumpStateTest" classname="StateMachineTest" runstate="Runnable" seed="861672236" result="Passed" start-time="2022-05-25 05:13:34Z" end-time="2022-05-25 05:13:34Z" duration="0.000305" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

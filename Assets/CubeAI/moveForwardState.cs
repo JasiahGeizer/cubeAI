@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moveForwardState : IState
+public class MoveForwardState : IState
 {
     float speed = 50f;
-    public void RunState(cubeStateMachine stateMachine)
+    private CubeMovement cube;
+
+    public void RunState(CubeMovement stateMachine)
     {
-        AddForce(stateMachine.GetComponent<Rigidbody>(), speed);
+        stateMachine.Move(Vector3.forward, speed);
     }
-    public void CheckState(cubeStateMachine stateMachine)
+    public IState CheckState(Vector3 cubePosition, Vector3 forwardDirection)
     {
-        stateMachine.switchState(stateMachine.moveForwardState);
+        return this;
     }
     public void AddForce(Rigidbody rig, float speedToAdd)
     {

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IState
 {
-    void RunState(cubeStateMachine stateMachine);
-    void CheckState(cubeStateMachine stateMachine);
+    void RunState(CubeMovement stateMachine);
+    IState CheckState(Vector3 cubePosition, Vector3 forwardDirection);
 }
